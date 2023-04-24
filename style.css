@@ -13,8 +13,9 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 350px;
-    height: 300px;
+    height: 330px;
     border-radius: 10px;
+    box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.13);
     
     
     
@@ -44,14 +45,32 @@ body{
     font-weight: bold;
     border-radius: 10px;
     margin-top: 20px;
-    transition: background-color 0.8s ease;;
     
-    
+
   
+}
+.limpar{
+    display: block;
+    margin: auto;
+    height: 30px;
+    width: 50%;
+    border: 1px solid black;
+    background: rgba(0, 0, 255, 0.582);
+    font-size: 0.9em;
+    font-weight: bold;
+    border-radius: 10px;
+    
+
+    
+}
+.limpar:hover{
+    background: #A40BD9;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .botao:hover{
     cursor: pointer;
-    transition: 0.5ms;
+    transition: 0.5s;
     background: rgba(0, 0, 255, 0.836);
 }
 .link{
@@ -63,6 +82,8 @@ body{
 
 .link:hover{
     text-decoration: underline;
+    color: #7C0CF8;
+    transition: 0.2s;
 }
 
     

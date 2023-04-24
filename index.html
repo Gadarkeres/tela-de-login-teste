@@ -11,17 +11,20 @@
     <div class="login">
         <h1>Login</h1>
         <hr>
-        <form autocomplete="off">
+        <form autocomplete="on">
             <div class="txt-field">
-                <p> <label for="username">Usuario:</label> <input type="text" id="username" required> </p>
+                <p> <label for="username">Usuario:</label> 
+                    <input type="text" id="username" required placeholder="Digite seu Usuário" autocomplete="username" minlength="8"> </p>
                 
             </div>
             <div class="txt-field">
-                <p> <label for="Password">Senha:</label> <input type="text" id="Password" required> </p>
+                <p> <label for="Password">Senha:</label> 
+                    <input type="text" id="Password" required placeholder="Digite sua senha" autocomplete="current-password" minlength="8"> </p>
             </div>
 
-            <div class="pass"> esqueceu a senha? clique <a class="link" href="#">aqui</a></div>
+            <div class="pass"> esqueceu a senha? clique <a class="link" href="#" target="_blank">aqui</a></div>
             <p><input class="botao" type="submit" value="Login"></p>
+            <p><input class="limpar" type="reset" value="Limpar"></p>
         </form>
     </div>
     
