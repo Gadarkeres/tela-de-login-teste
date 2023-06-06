@@ -7,7 +7,7 @@
     <title>Tela de login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="carregado()">
     <div class="login">
         <h1>Login</h1>
         <hr>
@@ -25,9 +25,17 @@
             <input  id='checkbox'type="checkbox" name="senha" id="isenha" checked>
             <label for="senha"> Lembrar-me</label>
             <div class="pass"> esqueceu a senha? clique <a class="link" href="#" target="_blank">aqui</a></div>
-            <p><input class="botao" type="submit" value="Login"></p>
+            <p><input class="botao" type="submit" value="Login" onclick="enviar()"></p>
             <p><input class="limpar" type="reset" value="Limpar"></p>
         </form>
     </div>
+    <script>
+        function carregado(){
+            window.alert('Bem-vindo novamente, por favor faça login')
+        }
+        function enviar(){
+            window.alert('Obrigado por testar meu site, esses dados serão enviados para lugar nenhum!')
+        }
+    </script>
 </body>
 </html>
